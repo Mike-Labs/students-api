@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start" class="back-button">
+    <ion-back-button defaultHref="/" text=""></ion-back-button>
+  </ion-buttons>
+    <ion-title size="medium" class="ion-text-center header-info">Students list</ion-title>
+
+    <div class="logout-icon-wrapper" slot="end">
+      <ion-icon class="logout-icon"name="log-out-outline"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scanCode()" [disabled]="!isSupported">
+      <ion-icon name="scan"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+ 
+</ion-content>

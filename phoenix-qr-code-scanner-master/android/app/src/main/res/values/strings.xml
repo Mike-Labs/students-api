@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">kinderhaus</string>
+    <string name="title_activity_main">kinderhaus</string>
+    <string name="package_name">com.phoenixdimas.android.kinderhaus</string>
+    <string name="custom_url_scheme">com.phoenixdimas.android.kinderhaus</string>
+</resources>

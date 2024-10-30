@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/" text=""></ion-back-button>
+  </ion-buttons>
+    <ion-title size="medium" class="ion-text-center header-info">Students list</ion-title>
+
+    <div class="logout-icon-wrapper" slot="end">
+      <ion-icon class="logout-icon"name="log-out-outline"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item lines="none">
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterList($event)" placeholder="Search Students"></ion-searchbar>
+
+  </ion-item>
+
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let student of filteredStudents">
+
+      <ion-icon 
+      *ngIf="student.nat === 'GB'" 
+      src="assets/flag-gb-round.svg"
+      ></ion-icon>
+      
+      <ion-icon 
+      *ngIf="student.nat === 'US'" 
+      src="assets/united-states-main.svg"
+      ></ion-icon>
+  
+      <ion-icon 
+      *ngIf="student.nat === 'AU'" 
+      src="assets/australia-svgrepo-com.svg"
+      ></ion-icon>
+
+      <ion-icon
+      *ngIf="student.nat !== 'GB' && student.nat !== 'US' && student.nat !== 'AU'" 
+      src="assets/globe-one.svg"
+      ></ion-icon>
+
+      
+      <ion-item>
+        {{ student.name }} 
+      </ion-item>
+
+    </ion-item>
+
+
+  </ion-list>
+
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="openFilter()" class="filter-button ion-margin-bottom">
+        <ion-icon name="filter-outline" class="fab-button-icon"></ion-icon>
+        FILTER
+      </ion-fab-button>
+    </ion-fab>
+
+
+</ion-content>

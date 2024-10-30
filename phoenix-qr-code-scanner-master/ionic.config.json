@@ -1,0 +1,7 @@
+{
+  "name": "kinderhaus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

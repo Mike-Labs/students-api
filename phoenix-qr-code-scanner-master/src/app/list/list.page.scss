@@ -1,0 +1,205 @@
+:root{
+    --white: #ffffff;
+}
+
+ion-toolbar{
+    --background:  rgb(199, 208, 67);
+    --color: rgb(255, 255, 255);
+  }
+
+.header-toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-info{
+    padding-inline: 0px;
+}
+
+.logout-icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 4px;
+}
+
+.logout-icon{
+    display: flex;
+    flex-direction: row;
+    width: 24px;
+    height: 48px;
+}
+
+
+.filter-button{
+      // margin-top: 48px;
+  --background: rgb(199, 208, 67);
+  --background-activated: rgb(170, 180, 56);
+  --background-focused: rgb(219, 226, 85);
+  --background-hover: rgb(180, 188, 72);
+  // --padding-start: 8px;
+  // --padding-end: 0px;
+}
+
+.icon-margin{
+    margin-right: var(--margin-right, 8px);
+}
+
+ion-fab-button{
+    --border-radius: 36px; /* Rounded corners for a rectangular shape */
+    height: 36px; /* Adjust height as needed */
+    width: 120px;  /* Adjust width as needed */
+}
+
+.fab-button-icon{
+    width: 18.9px;
+    height: 18.9px;
+    margin-right: var(--margin-right, 8px);
+}
+
+.row-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row-button-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+
+// .custom-action-sheet {
+//     --border-radius: 0; /* Flat design */
+//     --width: 100%; /* Full width for iOS-like appearance */
+//     --background: var(--ion-background-color);
+
+//     .custom-header {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding: 16px;
+//       background: var(--ion-background-color); /* Match action sheet background */
+//     }
+  
+//     .header-buttons {
+//       display: flex;
+//       justify-content: space-between;
+//       width: 100%; /* Stretch buttons across the header */
+//     }
+  
+//     .filter-button,
+//     .cancel-button {
+//       display: flex;
+//       align-items: center;
+//       font-size: 16px;
+//       padding: 0;
+//     }
+  
+//     .filter-button-action {
+//       color: var(--ion-color-primary); /* Customize color */
+//     }
+  
+//     .cancel-button {
+//       color: var(--ion-color-danger); /* Red color for cancel button */
+//     }
+  
+//     ion-icon {
+//       margin-right: 8px; /* Space between icon and text */
+//     }
+// }
+
+::ng-deep ion-icon.funnel-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+::ng-deep ion-icon.close-icon{
+    width: 32px;
+    height: 32px;
+}
+
+
+::ng-deep .filter-button-action{
+        --padding-start:0px;
+        --padding-end: 0px;
+
+        // --background: rgb(199, 208, 67);
+        --background-activated: rgb(170, 180, 56);
+        --background-focused: rgb(219, 226, 85);
+        --background-hover: rgb(180, 188, 72);
+
+        --color: rgb(170, 180, 56);
+
+        --border-radius: 36px; /* Rounded corners for a rectangular shape */
+        height: 36px; /* Adjust height as needed */
+        width: 120px;
+    }
+::ng-deep .cancel-button{
+    --padding-start: 0px;
+    --padding-end: 0px;
+
+    // --background: rgb(199, 208, 67);
+    --background-activated: rgb(170, 180, 56);
+    --background-focused: rgb(219, 226, 85);
+    --background-hover: rgb(180, 188, 72);
+
+    --color: rgb(170, 180, 56);
+
+    --border-radius: 36px; /* Rounded corners for a rectangular shape */
+    height: 36px; /* Adjust height as needed */
+    width: 120px;
+}
+
+::ng-deep .header-row-action{
+    border-bottom: 1px solid #D0CAD5;
+}
+
+::ng-deep .footer-row-action{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+::ng-deep .action-sheet-group-cancel{
+    // border-top: 1px solid #D0CAD5 !important;
+}
+
+::ng-deep .action-custom{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    // display: flex;
+    // justify-content: center !important;
+    // flex-direction: row;
+}
+
+::ng-deep .action-button{
+    display: block;
+    position: relative;
+}
+
+::ng-deep .myActionSheetBtnStyle{
+    border: 2px solid red;
+    text-align: center;
+
+}
+::ng-deep .action-sheet-button-inner {
+    display: flex;
+    justify-content: center !important; /* Override the default flex-start */
+}
+
+
+// .action-sheet-container{
+//     z-index: 0;
+// }
+
+  
+  
+  
